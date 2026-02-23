@@ -99,7 +99,6 @@ queue_string_update options        "@$old_domain" "@$new_domain" option_value
 # A number of options and post content may contain the old URL:
 # This also updates the critical 'siteurl' and 'home' options:
 queue_string_update options                "$old_url" "$new_url" option_value
-queue_string_update posts                  "$old_url" "$new_url" guid
 queue_string_update posts                  "$old_url" "$new_url" post_content
 queue_string_update postmeta               "$old_url" "$new_url" meta_value
 queue_string_update users                  "$old_url" "$new_url" user_url
